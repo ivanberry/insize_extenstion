@@ -1,26 +1,18 @@
 import { useState } from "react"
 
 function IndexPopup() {
-  const [data, setData] = useState("")
 
   return (
     <div
       style={{
         display: "flex",
         flexDirection: "column",
-        padding: 16
+        padding: 16,
+        whiteSpace: "nowrap"
       }}>
-      <h2>
-        Welcome to your{" "}
-        <a href="https://www.plasmo.com" target="_blank">
-          Plasmo
-        </a>{" "}
-        Extension!
-      </h2>
-      <input onChange={(e) => setData(e.target.value)} value={data} />
-      <a href="https://docs.plasmo.com" target="_blank">
-        View Docs
-      </a>
+      <p>
+        <a href="https://insize.app/ocr">图片转尺码</a>
+      </p>
     </div>
   )
 }
